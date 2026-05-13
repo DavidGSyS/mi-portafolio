@@ -14,8 +14,8 @@ const Hero = () => {
                 </div>
             </div>
             <h1>
-                Soy <span>David G.</span>,{' '}
-                Desarrollador Fullstack & Mobile.
+                Soy <span>David Guzmán</span>,{' '}
+                Desarrollador Junior Fullstack.
             </h1>
             <p>
                 Construyo aplicaciones web modernas con Python/Flask y JavaScript,

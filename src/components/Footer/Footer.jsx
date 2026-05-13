@@ -53,7 +53,7 @@ const Footer = () => {
                         <FiGithub size={18} style={{ marginRight: 6, verticalAlign: 'middle' }} />GitHub
                     </a>
                     {/* TODO: Reemplazar con tu LinkedIn */}
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+                    <a href="" target="_blank" rel="noopener noreferrer">
                         <FiLinkedin size={18} style={{ marginRight: 6, verticalAlign: 'middle' }} />LinkedIn
                     </a>
                 </div>

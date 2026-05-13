@@ -48,20 +48,20 @@ const Contact = () => {
                         y te responderé lo antes posible.
                     </p>
                     <div className="contact-details">
-                        <a href="mailto:tu@email.com" className="contact-detail">
+                        <a href="mailto:david-963369@hotmail.com" className="contact-detail">
                             <FiMail size={22} color="#22D3EE" />
                             {/* TODO: Reemplazar con tu email */}
-                            <p>tu@email.com</p>
+                            <p>david-963369@hotmail.com</p>
                         </a>
-                        <a href="tel:+57XXXXXXXXXX" className="contact-detail">
+                        <a href="tel:+573044155956" className="contact-detail">
                             <FiPhone size={22} color="#22D3EE" />
                             {/* TODO: Reemplazar con tu teléfono */}
-                            <p>+57 XXX XXX XXXX</p>
+                            <p>+573044155956</p>
                         </a>
                         <div className="contact-detail">
                             <FiMapPin size={22} color="#22D3EE" />
                             {/* TODO: Reemplazar con tu ubicación */}
-                            <p>Colombia</p>
+                            <p>Colombia - Cartagena</p>
                         </div>
                     </div>
                 </div>
