@@ -1,0 +1,93 @@
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.highlights-title h2 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  text-align: center;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.highlight-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 16px;
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #1a2332;
+  background: linear-gradient(135deg, rgba(8, 12, 20, 0.8), rgba(8, 12, 20, 0.4));
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--brand-grad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.highlight-card:hover::before { transform: scaleX(1); }
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37, 99, 235, 0.5);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.05), rgba(30, 58, 138, 0.08));
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15), 0 0 0 1px rgba(37, 99, 235, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.highlight-header {
+  font-weight: 800;
+  margin-bottom: 6px;
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.highlight-header::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.highlight-card p { color: #d4d4d4; font-size: 18px; line-height: 32px; }
+.highlight-card ul { margin: 4px 0 0 18px; display: grid; gap: 6px; }
+.highlight-card li { color: #d8d8d8; font-size: 16px; }
+
+@media(max-width: 768px) {
+  .highlights { margin: 60px auto; gap: 50px; padding: 0 30px; }
+  .highlights-grid { grid-template-columns: 1fr; gap: 24px; }
+  .highlight-card { padding: 30px; }
+  .highlight-card p { font-size: 16px; line-height: 28px; }
+}
+
+@media(max-width: 480px) {
+  .highlights { margin: 40px auto; gap: 40px; padding: 0 20px; }
+  .highlight-card { padding: 24px; gap: 14px; }
+  .highlight-card p { font-size: 15px; line-height: 26px; }
+  .highlight-card li { font-size: 14px; }
+}
