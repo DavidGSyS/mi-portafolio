@@ -92,7 +92,7 @@ Kotlin • Android Studio • Material Design
 
 # 🌐 Portafolio Online
 
-https://mi-portafolio-nine-khaki.vercel.app
+https://davidgsysportafolio.vercel.app
 
 ---
 
