@@ -29,8 +29,8 @@ const Hero = () => {
                 }}>
                     <span className="anchor-link">Conectar conmigo</span>
                 </button>
-                <a href="https://github.com/DavidGSyS" target="_blank" rel="noopener noreferrer" className="hero-resumen anchor-link">
-                    Mi GitHub
+                <a href="/hoja-de-vida.pdf" download="Hoja de vida - David Guzmán.pdf" className="hero-resumen anchor-link">
+                    Mi CV
                 </a>
             </div>
         </div>
