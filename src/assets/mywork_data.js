@@ -36,6 +36,14 @@ const mywork_data = [
         w_desc: "Bot automatizado de Telegram desarrollado en Python para consultar restricciones de Pico y Placa en Colombia, con gestión de usuarios, base de datos SQLite y arquitectura escalable.",
         w_techs: ["Python", "Telegram Bot API", "SQLite", "Automatización"]
     },
+    {
+        w_no: 5,
+        w_name: "Sakura Nails",
+        w_img: project5_img,
+        w_link: "https://github.com/DavidGSyS/sakura-nails",
+        w_desc: "Landing page moderna para salón de belleza con diseño elegante, galería interactiva, sistema de reservas y responsive design completo.",
+        w_techs: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    },
 ]
 
 export default mywork_data;
