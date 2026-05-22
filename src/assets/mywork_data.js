@@ -2,6 +2,7 @@ import project1_img from './project_1.png'
 import project2_img from './project_2.png'
 import project3_img from './project_3.png'
 import project4_img from './project_4.jpg'
+import project5_img from './project_5.jpg'
 
 const mywork_data = [
     {
